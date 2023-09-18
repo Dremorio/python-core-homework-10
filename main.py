@@ -47,9 +47,9 @@ class Record:
         raise ValueError('Invalid number')
 
     def find_phone(self, phone):
-        for phone in self.phones:
-            if phone.value == phone:
-                return phone
+        for p in self.phones:
+            if p.value == phone:
+                return p
         return None
 
     def __str__(self):
